@@ -126,8 +126,8 @@ for num in erik_lot_num
   end
 end
 
-p erik_lot_num_smallest
-p erik_lot_num.min()
+erik_lot_num_smallest
+erik_lot_num.min()
 
 #6. Return an array of Avril's lottery numbers that are even
 avril_lot_num = users["Avril"][:lottery_numbers]
@@ -185,6 +185,12 @@ united_kingdom = [
 # Complete these tasks:
 
 #1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
+for country in united_kingdom
+  if country[:name] == "Wales"
+    country[:capital] = "Cardiff"
+  end
+end
+
 #2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
 #3. Use a loop to print the names of all the countries in the UK.
 #4. Use a loop to find the total population of the UK.
