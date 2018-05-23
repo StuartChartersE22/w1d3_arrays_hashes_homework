@@ -112,6 +112,13 @@ erik_home = users["Erik"][:home_town]
 erik_lot_num = users["Erik"][:lottery_numbers]
 
 #4. Get the type of Avril's pet Monty
+for pet in users["Avril"][:pets]
+  if pet[:name] == "monty"
+     species_of_monty = pet[:species]
+  end
+end
+
+p species_of_monty
 #5. Get the smallest of Erik's lottery numbers
 #6. Return an array of Avril's lottery numbers that are even
 #7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
