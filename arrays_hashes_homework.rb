@@ -141,10 +141,12 @@ end
 #7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 erik_lot_num << 7
 
-p erik_lot_num
-
 #8. Change Erik's hometown to Edinburgh
+erik_home = "Edinburgh"
+
 #9. Add a pet dog to Erik called "Fluffy"
+users["Erik"][:pets] << {name: "Fluffy", species: "dog"}
+
 #10. Add another person to the users hash
 
 
