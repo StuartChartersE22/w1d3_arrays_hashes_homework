@@ -213,5 +213,3 @@ pop_of_uk = 0
 for country in united_kingdom
   pop_of_uk += country[:population]
 end
-
-p pop_of_uk
