@@ -36,6 +36,9 @@ way2 = stops[-5]
 return_journey = stops.reverse()
 
 #10. Print out all the stops using a for loop
+for place in stops
+  p place
+end
 
 # Exercise B
 
