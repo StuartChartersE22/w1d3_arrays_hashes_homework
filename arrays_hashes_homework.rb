@@ -37,7 +37,7 @@ return_journey = stops.reverse()
 
 #10. Print out all the stops using a for loop
 for place in stops
-  p place
+  #p place
 end
 
 # Exercise B
@@ -103,6 +103,9 @@ users = {
 # Complete these tasks:
 
 #1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+jon_twitter = users["Jonathan"][:twitter]
+p jon_twitter
+
 #2. Get Erik's hometown
 #3. Get the array of Erik's lottery numbers
 #4. Get the type of Avril's pet Monty
