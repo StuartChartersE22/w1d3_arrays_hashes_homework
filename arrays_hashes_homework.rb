@@ -126,8 +126,8 @@ for num in erik_lot_num
   end
 end
 
-p erik_lot_num_smallest
-p erik_lot_num.min()
+erik_lot_num_smallest
+erik_lot_num.min()
 
 #6. Return an array of Avril's lottery numbers that are even
 avril_lot_num = users["Avril"][:lottery_numbers]
@@ -138,9 +138,11 @@ for num in avril_lot_num
   end
 end
 
-p avril_lot_num_even 
-
 #7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+erik_lot_num << 7
+
+p erik_lot_num
+
 #8. Change Erik's hometown to Edinburgh
 #9. Add a pet dog to Erik called "Fluffy"
 #10. Add another person to the users hash
