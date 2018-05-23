@@ -28,11 +28,12 @@ stops.delete_at(2)
 length_of_array = stops.length
 
 #8. How many ways can we return `"Falkirk High"` from the array?
-p stops[2]
-p stops[-5]
-p
+way1 = stops[2]
+way2 = stops[-5]
+
 
 #9. Reverse the positions of the stops in the array
+return_journey = stops.reverse()
 
 #10. Print out all the stops using a for loop
 
