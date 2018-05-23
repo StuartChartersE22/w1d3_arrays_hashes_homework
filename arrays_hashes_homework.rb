@@ -148,7 +148,17 @@ erik_home = "Edinburgh"
 users["Erik"][:pets] << {name: "Fluffy", species: "dog"}
 
 #10. Add another person to the users hash
-
+users["Stuart"] = {
+  :twitter => nil,
+  :lottery_numbers => [9, 10, 1, 22, 4, 3],
+  :home_town => "Hinckley",
+  :pets => [
+    {
+      name: "she"
+      species: "bike"
+    }
+  ]
+}
 
 # Exercise C
 
