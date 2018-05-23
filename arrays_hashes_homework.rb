@@ -118,8 +118,17 @@ for pet in users["Avril"][:pets]
   end
 end
 
-p species_of_monty
 #5. Get the smallest of Erik's lottery numbers
+erik_lot_num_smallest = 1000
+for num in erik_lot_num
+  if erik_lot_num_smallest > num
+    erik_lot_num_smallest = num
+  end
+end
+
+p erik_lot_num_smallest
+p erik_lot_num.min()
+
 #6. Return an array of Avril's lottery numbers that are even
 #7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 #8. Change Erik's hometown to Edinburgh
