@@ -119,15 +119,15 @@ for pet in users["Avril"][:pets]
 end
 
 #5. Get the smallest of Erik's lottery numbers
-erik_lot_num_smallest = 1000
+erik_lot_num_smallest = erik_lot_num.sum()
 for num in erik_lot_num
   if erik_lot_num_smallest > num
     erik_lot_num_smallest = num
   end
 end
 
-erik_lot_num_smallest
-erik_lot_num.min()
+p erik_lot_num_smallest
+p erik_lot_num.min()
 
 #6. Return an array of Avril's lottery numbers that are even
 avril_lot_num = users["Avril"][:lottery_numbers]
@@ -154,7 +154,7 @@ users["Stuart"] = {
   :home_town => "Hinckley",
   :pets => [
     {
-      name: "she"
+      name: "she",
       species: "bike"
     }
   ]
