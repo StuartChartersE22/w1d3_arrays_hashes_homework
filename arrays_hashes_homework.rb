@@ -7,7 +7,8 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 # Complete these tasks:
 
 #1. Add `"Edinburgh Waverley"` to the end of the array
-stops << "Edinburgh Waverley"
+#stops << "Edinburgh Waverley"
+stops.push("Edinburgh Waverley") #more common
 
 #2. Add `"Glasgow Queen St"` to the start of the array
 stops.unshift("Glasgow Queen St")
@@ -26,14 +27,17 @@ stops.delete_at(2)
 
 #7. How many stops there are in the array?
 length_of_array = stops.length
+#stops.count()
+#stops.size()
 
 #8. How many ways can we return `"Falkirk High"` from the array?
 way1 = stops[2]
 way2 = stops[-5]
-
+way3 = stops.fetch(2)
+way4 = stops.values_at(2) #brings array as plural
 
 #9. Reverse the positions of the stops in the array
-return_journey = stops.reverse()
+return_journey = stops.reverse() #not permanent, '!' will make it distructive
 
 #10. Print out all the stops using a for loop
 for place in stops
@@ -131,10 +135,10 @@ erik_lot_num.min()
 
 #6. Return an array of Avril's lottery numbers that are even
 avril_lot_num = users["Avril"][:lottery_numbers]
-avril_lot_num_even = []
+avril_even_lottery_numbers = [] #pluralise for arrays as generally multiple
 for num in avril_lot_num
   if num % 2 == 0
-    avril_lot_num_even << num
+    avril_even_lottery_numbers << num
   end
 end
 
